@@ -6,6 +6,7 @@ class ExpedierColors {
   ExpedierColors._();
 
   static const Color white = Color(0xffFFFFFF);
+  static const Color white1 = Color(0xffF1F1F1);
   static const Color black = Color(0xff000000);
   static const Color primary = Color(0xFF0166F4);
 
@@ -33,6 +34,8 @@ class ExpedierColors {
   static const Color black2 = Color(0xff25282D);
   static const Color black3 = Color(0xff54595F);
   static const Color black4 = Color(0xff363A40);
+  static const Color black5 = Color(0xFF121212);
+  static const Color black6 = Color(0xFF424242);
 
   static const Color navyBlue1 = Color(0xff0E1F33);
 
@@ -47,6 +50,7 @@ class ExpedierColors {
   static const Color red3 = Color(0xffE76670);
   static const Color red4 = Color(0xFFE40E20);
   static const Color red5 = Color(0xFFe84553);
+  static const Color red6 = Color(0xFFBD0D0D);
 
   static const Color yellow1 = Color(0xFFEDB82E);
   static const Color yellow2 = Color(0xFFF9C537);
@@ -55,11 +59,13 @@ class ExpedierColors {
 
   static const Color blue3 = Color(0xFF0080F0);
   static const Color blue4 = Color(0xFFDCE6F4);
+  static const Color blue5 = Color(0xFFA9B6CA);
 
   static const Color green1 = Color(0xFF73E88D);
   static const Color green2 = Color(0xFF14C36E);
   static const Color green3 = Color(0x3314C36E);
   static const Color green4 = Color(0xFF07C267);
+  static const Color green5 = Color(0xFF189825);
 
   static Color getShade(Color color, {bool darker = false, double value = .1}) {
     assert(value >= 0 && value <= 1);

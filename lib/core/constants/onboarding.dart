@@ -1,17 +1,11 @@
 import 'package:expedier_ui/core/extensions/string_extensions.dart';
 
 class OnboardingAssets {
-  final String image;
+  String? image;
   final String title;
   final String body;
-  final bool isPng;
 
-  OnboardingAssets({
-    required this.image,
-    required this.title,
-    required this.body,
-    required this.isPng,
-  });
+  OnboardingAssets({this.image, required this.title, required this.body});
 }
 
 List<OnboardingAssets> onboardingAssets = [
@@ -20,18 +14,34 @@ List<OnboardingAssets> onboardingAssets = [
     title: "Experience effortless currency exchange and fast Transaction",
     body:
         "Seamlessly convert currencies at the best rates with quick and secure transactions",
-    isPng: false,
   ),
   OnboardingAssets(
     image: "onboarding_2".png,
     title: "Card data security",
     body: "Experience peace of mind with our Secured and Trusted banking app. ",
-    isPng: true,
   ),
   OnboardingAssets(
-    image: "",
+    image: null,
     title: "Exchange Money",
     body: "Enjoy excellent exchange rates for various currencies.",
-    isPng: true,
   ),
+];
+
+class Currency {
+  final String flag;
+  final String code;
+  final double sell;
+  final double buy;
+  Currency({
+    required this.flag,
+    required this.code,
+    required this.sell,
+    required this.buy,
+  });
+}
+
+List<Currency> currencyList = [
+  Currency(flag: '🇨🇦', code: 'CAD', sell: 76.36, buy: 72.36),
+  Currency(flag: '🇳🇬', code: 'NGN', sell: 76.36, buy: 72.36),
+  Currency(flag: '🇺🇸', code: 'USD', sell: 76.36, buy: 72.36),
 ];

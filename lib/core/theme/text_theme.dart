@@ -8,7 +8,7 @@ class AppTextTheme {
 
   static TextTheme darkTextTheme = TextTheme(
     // H1
-    headlineMedium: GoogleFonts.inter(
+    headlineMedium: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 28.5.sp,
       // height: (40 / 32).sp,
@@ -17,14 +17,14 @@ class AppTextTheme {
       //fontVariations: [const FontVariation('wght', 400)],
     ),
     // Title1
-    headlineLarge: GoogleFonts.inter(
+    headlineLarge: GoogleFonts.rubik(
       // fontFamily: 'TT-Norms',
       fontSize: 36.5.sp,
       color: ExpedierColors.white,
       fontWeight: FontWeight.w700,
       // fontVariations: [const FontVariation('wght', 500)],
     ),
-    headlineSmall: GoogleFonts.inter(
+    headlineSmall: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 20.5.sp,
       color: ExpedierColors.white,
@@ -33,7 +33,7 @@ class AppTextTheme {
     ),
 
     // Body
-    titleMedium: GoogleFonts.inter(
+    titleMedium: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 24.5.sp,
       color: ExpedierColors.white,
@@ -41,14 +41,14 @@ class AppTextTheme {
       //fontVariations: [const FontVariation('wght', 400)],
     ),
     // Title1-Bold
-    titleLarge: GoogleFonts.inter(
+    titleLarge: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 30.5.sp,
       color: ExpedierColors.white,
       fontWeight: FontWeight.w700,
       //fontVariations: [const FontVariation('wght', 700)],
     ),
-    titleSmall: GoogleFonts.inter(
+    titleSmall: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 20.5.sp,
       color: ExpedierColors.white,
@@ -57,7 +57,7 @@ class AppTextTheme {
     ),
 
     // Title2-Bold
-    labelLarge: GoogleFonts.inter(
+    labelLarge: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 20.sp,
       color: ExpedierColors.white,
@@ -65,7 +65,7 @@ class AppTextTheme {
       //fontVariations: [const FontVariation('wght', 700)],
     ),
     // Body2-Bold
-    labelMedium: GoogleFonts.inter(
+    labelMedium: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 16.sp,
       color: ExpedierColors.white,
@@ -73,7 +73,7 @@ class AppTextTheme {
       //fontVariations: [const FontVariation('wght', 400)],
     ),
     // Body2
-    labelSmall: GoogleFonts.inter(
+    labelSmall: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 14.sp,
       color: ExpedierColors.white,
@@ -82,23 +82,24 @@ class AppTextTheme {
       //fontVariations: [const FontVariation('wght', 400)],
     ),
     // Headline-Bold
-    bodyLarge: GoogleFonts.inter(
+    bodyLarge: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
-      fontSize: 20.5.sp,
+      fontSize: 20.sp,
       color: ExpedierColors.white,
       // fontWeight: FontWeight.w700,
       //fontVariations: [const FontVariation('wght', 700)],
     ),
     // Headline
-    bodyMedium: GoogleFonts.inter(
+    bodyMedium: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 16.sp,
       color: ExpedierColors.white,
       fontWeight: FontWeight.w500,
+     
       //fontVariations: [const FontVariation('wght', 500)],
     ),
     // Body-Bold
-    bodySmall: GoogleFonts.inter(
+    bodySmall: GoogleFonts.rubik(
       // fontFamily: 'TT-Norms',
       fontSize: 14.sp,
       color: ExpedierColors.white,
@@ -109,101 +110,101 @@ class AppTextTheme {
 
   static TextTheme lightTextTheme = TextTheme(
     // H1
-    headlineMedium: GoogleFonts.inter(
+    headlineMedium: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 28.5.sp,
       // height: (40 / 32).sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       fontWeight: FontWeight.w400,
       //fontVariations: [const FontVariation('wght', 400)],
     ),
     // Title1
-    headlineLarge: GoogleFonts.inter(
+    headlineLarge: GoogleFonts.rubik(
       // fontFamily: 'TT-Norms',
       fontSize: 36.5.sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       fontWeight: FontWeight.w700,
       // fontVariations: [const FontVariation('wght', 500)],
     ),
-    headlineSmall: GoogleFonts.inter(
+    headlineSmall: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 20.5.sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       // fontWeight: FontWeight.w500,
       //fontVariations: [const FontVariation('wght', 500)],
     ),
 
     // Body
-    titleMedium: GoogleFonts.inter(
+    titleMedium: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 24.5.sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       fontWeight: FontWeight.w700,
       //fontVariations: [const FontVariation('wght', 400)],
     ),
     // Title1-Bold
-    titleLarge: GoogleFonts.inter(
+    titleLarge: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 30.5.sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       fontWeight: FontWeight.w700,
       //fontVariations: [const FontVariation('wght', 700)],
     ),
-    titleSmall: GoogleFonts.inter(
+    titleSmall: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 20.5.sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       fontWeight: FontWeight.w700,
       //fontVariations: [const FontVariation('wght', 700)],
     ),
 
     // Title2-Bold
-    labelLarge: GoogleFonts.inter(
+    labelLarge: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 20.sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       // fontWeight: FontWeight.w700,
       //fontVariations: [const FontVariation('wght', 700)],
     ),
     // Body2-Bold
-    labelMedium: GoogleFonts.inter(
+    labelMedium: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 16.sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       // fontWeight: FontWeight.w400,
       //fontVariations: [const FontVariation('wght', 400)],
     ),
     // Body2
-    labelSmall: GoogleFonts.inter(
+    labelSmall: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 14.sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.5,
       //fontVariations: [const FontVariation('wght', 400)],
     ),
     // Headline-Bold
-    bodyLarge: GoogleFonts.inter(
+    bodyLarge: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 20.5.sp,
-      color: ExpedierColors.vampireBlack,
+      color: ExpedierColors.black5,
       // fontWeight: FontWeight.w700,
       //fontVariations: [const FontVariation('wght', 700)],
     ),
     // Headline
-    bodyMedium: GoogleFonts.inter(
+    bodyMedium: GoogleFonts.rubik(
       //fontFamily: 'TT-Norms',
       fontSize: 16.sp,
-      color: ExpedierColors.vampireBlack,
-      fontWeight: FontWeight.w500,
+      color: ExpedierColors.black5,
+      //fontWeight: FontWeight.w500,
       //fontVariations: [const FontVariation('wght', 500)],
     ),
     // Body-Bold
-    bodySmall: GoogleFonts.inter(
+    bodySmall: GoogleFonts.rubik(
       // fontFamily: 'TT-Norms',
       fontSize: 14.sp,
-      color: ExpedierColors.vampireBlack,
-      fontWeight: FontWeight.w500,
+      color: ExpedierColors.black5,
+      //fontWeight: FontWeight.w500,
       //fontVariations: [const FontVariation('wght', 500)],
     ),
   );

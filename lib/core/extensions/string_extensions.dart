@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 extension AssetName on String {
   String get svg => 'assets/svg/$this.svg';
   String get png => 'assets/png/$this.png';
-  String get jpg => 'assets/images/$this.jpg';
+  String get jpg => 'assets/jpg/$this.jpg';
   String get mp4 => 'assets/videos/$this.mp4';
   String get gif => 'assets/gif/$this.gif';
 }

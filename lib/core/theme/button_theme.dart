@@ -10,7 +10,7 @@ class AppButtonTheme {
     style: ElevatedButton.styleFrom(
       disabledBackgroundColor: ExpedierColors.white.withOpacity(0.3),
       disabledForegroundColor: ExpedierColors.grey3,
-      backgroundColor: ExpedierColors.cadmiumRed,
+      backgroundColor: ExpedierColors.primary,
       foregroundColor: ExpedierColors.white,
       elevation: 10,
       padding: EdgeInsets.symmetric(vertical: 16.h),
@@ -32,8 +32,8 @@ class AppButtonTheme {
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       disabledBackgroundColor: ExpedierColors.white.withOpacity(0.3),
-      disabledForegroundColor: ExpedierColors.cadmiumRed.withOpacity(0.3),
-      backgroundColor: ExpedierColors.cadmiumRed,
+      disabledForegroundColor: ExpedierColors.primary.withOpacity(0.3),
+      backgroundColor: ExpedierColors.primary,
       foregroundColor: ExpedierColors.white,
       elevation: 10,
       padding: EdgeInsets.symmetric(vertical: 16.h),

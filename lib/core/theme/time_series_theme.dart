@@ -32,7 +32,7 @@ class TimeSeriesTheme {
       ),
       textTheme: AppTextTheme.lightTextTheme,
       colorScheme: const ColorScheme.light(
-        primary: ExpedierColors.cadmiumRed, // cadmiumRed
+        primary: ExpedierColors.primary, // primary
         onPrimary: Colors.white,
         secondary: Color(0xFF607D8B),
         surface: Colors.white,
@@ -40,13 +40,13 @@ class TimeSeriesTheme {
       ),
       chipTheme: ChipThemeData(
         backgroundColor: const Color(0xFFF2F3F5),
-        selectedColor: const Color(0xFFE53935),
+        selectedColor: ExpedierColors.primary,
         labelStyle: const TextStyle(color: Color(0xFF1E1E1E)),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFFE53935),
+          backgroundColor: ExpedierColors.primary,
           foregroundColor: Colors.white,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -57,8 +57,8 @@ class TimeSeriesTheme {
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          side: const BorderSide(color: Color(0xFFE53935)),
-          foregroundColor: const Color(0xFFE53935),
+          side: const BorderSide(color: ExpedierColors.primary),
+          foregroundColor: ExpedierColors.primary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
@@ -90,7 +90,7 @@ class TimeSeriesTheme {
           context,
         ).textTheme.bodyLarge?.copyWith(color: ExpedierColors.vampireBlack400),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-        selectedColor: ExpedierColors.cadmiumRed,
+        selectedColor: ExpedierColors.primary,
         backgroundColor: ExpedierColors.vampireBlack500,
       ),
       dialogBackgroundColor: ExpedierColors.vampireBlack,
@@ -105,7 +105,7 @@ class TimeSeriesTheme {
             return ExpedierColors.grey5.withOpacity(.5);
           }
           if (states.contains(WidgetState.selected)) {
-            return ExpedierColors.cadmiumRed;
+            return ExpedierColors.primary;
           }
           return ExpedierColors.grey3;
         }),
@@ -130,7 +130,7 @@ class TimeSeriesTheme {
             return null;
           }
           if (states.contains(WidgetState.selected)) {
-            return ExpedierColors.cadmiumRed;
+            return ExpedierColors.primary;
           }
           return null;
         }),
