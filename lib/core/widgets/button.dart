@@ -1,10 +1,8 @@
-
-
-
 import 'package:expedier_ui/core/extensions/context_extensions.dart';
 import 'package:expedier_ui/core/extensions/theme_extension.dart';
 import 'package:expedier_ui/core/theme/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ExpedierButtons {
   bool? expanded;
@@ -57,9 +55,7 @@ class ExpedierButtons {
             isLoading
                 ? Center(
                   child: CircularProgressIndicator.adaptive(
-                    valueColor: AlwaysStoppedAnimation(
-                      ExpedierColors.white,
-                    ),
+                    valueColor: AlwaysStoppedAnimation(ExpedierColors.white),
                   ),
                 )
                 : buttonContent ??
@@ -126,6 +122,41 @@ class ExpedierButtons {
                     fontWeight: fontWeight,
                   ),
             ),
+      ),
+    );
+  }
+}
+
+class ExpedierBackButton extends StatelessWidget {
+  final Color? backColor;
+  const ExpedierBackButton({super.key, this.backColor});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(left: 16.w),
+      height: 50.0.h,
+      width: 65.h,
+      decoration: BoxDecoration(
+        color: backColor ?? ExpedierColors.white,
+        borderRadius: BorderRadius.circular(10.r),
+        border: Border.all(color: ExpedierColors.primary),
+      ),
+      child: Material(
+        type: MaterialType.transparency,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(10.r),
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Center(
+            child: Icon(
+              Icons.arrow_back,
+              color: ExpedierColors.primary,
+              size: 24.w,
+            ),
+          ),
+        ),
       ),
     );
   }

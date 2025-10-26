@@ -13,8 +13,8 @@ import 'package:flutter/material.dart';
 class ExpedierOtpInputField extends StatelessWidget {
   const ExpedierOtpInputField({
     super.key,
-    required this.errorController,
-    required this.otpTextEditingController,
+     this.errorController,
+     this.otpTextEditingController,
     this.hintCharacter = "",
     this.obscureText = false,
     this.validator,
@@ -22,8 +22,8 @@ class ExpedierOtpInputField extends StatelessWidget {
   });
   final String? hintCharacter;
   final int length;
-  final StreamController<ErrorAnimationType> errorController;
-  final TextEditingController otpTextEditingController;
+  final StreamController<ErrorAnimationType>? errorController;
+  final TextEditingController? otpTextEditingController;
   final bool obscureText;
   final FormFieldValidator<String>? validator;
 
@@ -43,27 +43,31 @@ class ExpedierOtpInputField extends StatelessWidget {
         FilteringTextInputFormatter.digitsOnly,
       ],
       pinTheme: PinTheme(
-        selectedColor: ExpedierColors.grey4,
-        selectedFillColor: ExpedierColors.grey1,
-        activeColor: Color(0x7FF19298),
-        shape: PinCodeFieldShape.circle,
+        selectedColor: ExpedierColors.primary,
+        selectedFillColor: ExpedierColors.primary.withOpacity(
+          0.03,
+        ),
+        activeColor: ExpedierColors.primary,
+        shape: PinCodeFieldShape.box,
+        
         borderWidth: 2,
 
-        borderRadius: BorderRadius.circular(5),
+        borderRadius: BorderRadius.circular(50.r),
         fieldHeight: 72.h,
         fieldWidth: 54.w,
 
-        activeFillColor: ExpedierColors.white.withOpacity(
-          0.10000000149011612,
+        activeFillColor: ExpedierColors.primary.withOpacity(
+          0.03,
         ),
+        
         errorBorderColor: ExpedierColors.red1,
-        inactiveFillColor: ExpedierColors.white.withOpacity(
+        inactiveFillColor: ExpedierColors.primary.withOpacity(
           0.10000000149011612,
         ),
         inactiveColor: ExpedierColors.grey4,
       ),
       animationDuration: const Duration(milliseconds: 300),
-      backgroundColor: ExpedierColors.grey1,
+      backgroundColor: ExpedierColors.white,
       enableActiveFill: true,
       dialogConfig: DialogConfig(
         dialogContent: "Do you want to paste this code?",

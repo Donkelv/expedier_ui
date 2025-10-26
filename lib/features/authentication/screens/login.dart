@@ -1,9 +1,11 @@
 import 'package:expedier_ui/core/extensions/context_extensions.dart';
 import 'package:expedier_ui/core/extensions/string_extensions.dart';
 import 'package:expedier_ui/core/extensions/theme_extension.dart';
+import 'package:expedier_ui/core/helper_functions.dart';
 import 'package:expedier_ui/core/theme/colors.dart';
 import 'package:expedier_ui/core/widgets/button.dart';
 import 'package:expedier_ui/core/widgets/text_fields/text_field.dart';
+import 'package:expedier_ui/features/authentication/screens/selfie_verification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:websafe_svg/websafe_svg.dart';
@@ -153,7 +155,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                   useChildHeight: true,
                                   text: "Login",
                                   context: context,
-                                  onTap: () {},
+                                  onTap: () {
+                                    navigateWithFade(
+                                      context,
+                                      SelfieVerificationScreen(),
+                                    );
+                                  },
                                 ).normal(),
                           ),
                         ),

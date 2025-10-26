@@ -38,6 +38,7 @@ class ExpedierColors {
   static const Color black6 = Color(0xFF424242);
 
   static const Color navyBlue1 = Color(0xff0E1F33);
+  static const Color navyBlue2 = Color(0xff11183C);
 
   static const Color pink1 = Color(0x7FF19298);
   static const Color pink2 = Color(0xffFFEDF5);
@@ -66,6 +67,8 @@ class ExpedierColors {
   static const Color green3 = Color(0x3314C36E);
   static const Color green4 = Color(0xFF07C267);
   static const Color green5 = Color(0xFF189825);
+
+  static const Color otline = Color(0xFFD7D9E4);
 
   static Color getShade(Color color, {bool darker = false, double value = .1}) {
     assert(value >= 0 && value <= 1);

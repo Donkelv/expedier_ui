@@ -52,7 +52,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         ] else ...[
                           OnboardingImageCards(index: pageIndex),
                         ],
-
                         OnboardingTexts(index: pageIndex),
                       ],
                     );
@@ -182,6 +181,7 @@ class OnboardingTexts extends StatelessWidget {
             style: context.textTheme.bodyLarge!.copyWith(
               height: 0,
               fontWeight: FontWeight.w700,
+              color: Colors.black
             ),
           ),
           16.0.verticalSpace,
