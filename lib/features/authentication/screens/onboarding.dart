@@ -1,5 +1,6 @@
 import 'package:expedier_ui/core/constants/onboarding.dart';
 import 'package:expedier_ui/core/extensions/context_extensions.dart';
+import 'package:expedier_ui/core/extensions/string_extensions.dart';
 import 'package:expedier_ui/core/extensions/theme_extension.dart';
 import 'package:expedier_ui/core/helper_functions.dart';
 import 'package:expedier_ui/core/theme/colors.dart';
@@ -21,6 +22,17 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   int pageIndex = 0;
   PageController pageController = PageController();
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await precacheImage(AssetImage("onboarding_1".jpg), context);
+      await precacheImage(AssetImage("onboarding_2".png), context);
+      await precacheImage(AssetImage("onboarding_3".png), context);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -181,7 +193,7 @@ class OnboardingTexts extends StatelessWidget {
             style: context.textTheme.bodyLarge!.copyWith(
               height: 0,
               fontWeight: FontWeight.w700,
-              color: Colors.black
+              color: Colors.black,
             ),
           ),
           16.0.verticalSpace,
