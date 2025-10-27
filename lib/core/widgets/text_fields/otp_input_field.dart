@@ -52,10 +52,10 @@ class ExpedierOtpInputField extends StatelessWidget {
         
         borderWidth: 2,
 
-        borderRadius: BorderRadius.circular(50.r),
+        borderRadius: BorderRadius.circular(15.r),
         fieldHeight: 72.h,
         fieldWidth: 54.w,
-
+        disabledColor: ExpedierColors.primary,
         activeFillColor: ExpedierColors.primary.withOpacity(
           0.03,
         ),

@@ -7,6 +7,7 @@ class ExpedierColors {
 
   static const Color white = Color(0xffFFFFFF);
   static const Color white1 = Color(0xffF1F1F1);
+  static const Color white2 = Color(0xffF6F6F6);
   static const Color black = Color(0xff000000);
   static const Color primary = Color(0xFF0166F4);
 
@@ -36,6 +37,7 @@ class ExpedierColors {
   static const Color black4 = Color(0xff363A40);
   static const Color black5 = Color(0xFF121212);
   static const Color black6 = Color(0xFF424242);
+  static const Color black7 = Color(0xFF212121);
 
   static const Color navyBlue1 = Color(0xff0E1F33);
   static const Color navyBlue2 = Color(0xff11183C);
@@ -61,6 +63,10 @@ class ExpedierColors {
   static const Color blue3 = Color(0xFF0080F0);
   static const Color blue4 = Color(0xFFDCE6F4);
   static const Color blue5 = Color(0xFFA9B6CA);
+  static const Color blue6 = Color(0xFF0146A8);
+  static const Color blue7 = Color(0xFF7AADF4);
+  static const Color blue8 = Color(0xFF0151C2);
+  static const Color blue9 = Color(0xFF92BAF4);
 
   static const Color green1 = Color(0xFF73E88D);
   static const Color green2 = Color(0xFF14C36E);

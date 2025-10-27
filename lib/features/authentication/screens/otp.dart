@@ -5,6 +5,8 @@ import 'package:expedier_ui/core/theme/colors.dart';
 import 'package:expedier_ui/core/widgets/button.dart';
 import 'package:expedier_ui/core/widgets/text_fields/otp_input_field.dart';
 import 'package:expedier_ui/features/authentication/screens/verification_success.dart';
+import 'package:expedier_ui/features/home/screens/bottom_app_bar.dart';
+import 'package:expedier_ui/features/home/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -79,7 +81,7 @@ class OtpScreen extends StatelessWidget {
                       text: "Start Now",
                       context: context,
                       onTap: () {
-                        //navigateWithFade(context, VerificationSuccessScreen());
+                        navigateWithFade(context, BottomAppBarWidget());
                       },
                     ).normal(),
               ),
