@@ -1,16 +1,46 @@
-# expedier_ui
+# Expedier UI Task
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## 📋 Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter SDK 3.32.5 (managed via FVM)
+- Dart SDK 3.7.2+
+- Android Studio / VS Code
+- Git
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Setup Instructions
+
+### 1. Install FVM (Flutter Version Management)
+
+```bash
+# Install FVM globally
+dart pub global activate fvm
+
+# Install Flutter 3.32.5
+fvm install 3.32.5
+
+# Use Flutter 3.32.5 for this project
+fvm use 3.32.5
+
+# Verify Flutter version
+fvm flutter --version
+```
+
+### 2. Clone and Setup Project
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd time_series
+
+# Install dependencies
+fvm flutter pub get
+
+# Generate code (for freezed models)
+fvm flutter packages pub run build_runner build
+
+# Run the application
+fvm flutter run
+```
